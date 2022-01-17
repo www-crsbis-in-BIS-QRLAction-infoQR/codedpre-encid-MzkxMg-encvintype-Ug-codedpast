@@ -1,0 +1,61 @@
+
+//Disable F5 and Ctrl+R on Google Chrome
+  document.onkeydown = function() 
+{
+    switch (event.keyCode) 
+    {
+        case 116 : //F5 button
+            event.returnValue = false;
+            alert("F5 Click Disabled");
+            event.keyCode = 0;
+           
+            return false;
+        case 82 : //R button
+            if (event.ctrlKey) 
+            {
+            	alert("Ctrl Click Disabled");
+                event.returnValue = false;                
+                event.keyCode = 0;               
+                return false;
+            } 
+    }
+};  
+
+ //Disable right click script on all Browser GC,MF,IE
+ var message = "";
+function clickIE() {
+    if (document.all) {
+        (message);
+        return false;
+    }
+}
+
+function clickNS(e) {
+    if (document.layers || (document.getElementById && !document.all)) {
+        if (e.which == 2 || e.which == 3) {
+        	alert("Mouse Right Click Disabled");
+            (message);
+            return false;
+        }
+    }
+}
+if (document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown = clickNS;
+} else {
+    document.onmouseup = clickNS;
+    document.oncontextmenu = clickIE;
+}
+document.oncontextmenu = new Function("return false"); 
+
+
+  function showKeyCode(event) {	
+	if(event.keyCode==116 || event.keyCode==17){
+	 	event.returnValue = false;
+        event.keyCode = 0;
+        return false;
+	}
+	if (event.ctrlKey ) {
+       return false;
+    }
+}   

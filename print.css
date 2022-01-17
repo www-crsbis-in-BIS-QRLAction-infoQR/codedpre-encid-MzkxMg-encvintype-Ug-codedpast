@@ -1,0 +1,262 @@
+
+
+ /* Remove unwanted elements */
+ header, footer, nav, .noprint
+ {
+ display: none !important;
+ }
+
+ /* Ensure the content spans the full width */
+ .container,.content-container
+ {
+  font-size: 110% !important;
+ width: 98%; margin:0; padding:0;float: none;
+ margin:0px auto !important;
+ }
+ /* Change text colour to black (useful for light text on a dark background) */
+ .lighttext
+ {
+ color: #000;
+ }
+
+ /* Improve colour contrast of links */
+ a:link, a:visited
+ {
+ color: #781351;
+ }
+
+ 
+/*css added earlier*/
+
+
+
+/*td.footable-first-column input[type=radio]
+{
+	display:none !important;
+	border:none !important;
+}
+table.footable
+{
+padding:0px;
+margin:0px;
+
+ -moz-border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  border-radius: 0px !important;
+}
+table.footable thead tbody th,td
+{
+padding:0px;
+margin:0px;
+
+}*/
+
+/*div[content~=Search]
+{
+	display:none !important;
+	border:1px solid black !important;
+}
+*/
+/*table.footable tfoot,thead th span.footable-sort-indicator,div>#filter
+{
+	display:none !important;
+}
+table.footable thead tr th
+{
+	color:black !important;;
+	font-weight:bold !important;
+}*/
+/*table th, table td {
+padding:2px !important;
+}*/
+/*.footable > thead > tr:first-child > th.footable-first-column, .footable > thead > tr:first-child > td.footable-first-column {
+  -moz-border-radius: 0 0 0 0 !important;
+  -webkit-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}
+
+.footable > thead > tr:first-child > th.footable-last-column, .footable > thead > tr:first-child > td.footable-last-column {
+  -moz-border-radius: 0 0 0 0 !important;
+  -webkit-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}
+
+.footable > thead > tr:first-child > th.footable-first-column.footable-last-column, .footable > thead > tr:first-child > td.footable-first-column.footable-last-column {
+  -moz-border-radius: 0 0 0 0 !important;
+  -webkit-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}
+
+.footable > tbody > tr:last-child > td.footable-first-column {
+  -moz-border-radius: 0 0 0 0 !important;
+  -webkit-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}
+
+.footable > tbody > tr:last-child > td.footable-last-column {
+  -moz-border-radius: 0 0 0 0 !important;
+  -webkit-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}
+
+.footable > tbody > tr:last-child > td.footable-first-column.footable-last-column {
+  -moz-border-radius: 0 0 0 0 !important;
+  -webkit-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}
+table.footable{
+        page-break-inside: a !important;      
+    }*/
+.grey_border
+{
+	border:none !important;;
+}
+fieldset
+{
+border:none !important;
+ padding:3px 0px 3px 0px; 
+ margin:0px;
+ line-height:1.2em !important;
+page-break-after:auto; 
+}
+ table { page-break-after:auto; }
+  tr    { page-break-inside:avoid; page-break-after:auto; }
+  td    { page-break-inside:avoid; page-break-after:auto; }
+  thead { display:table-header-group; }
+  tfoot { display:table-footer-group; }
+table
+{
+border-collapse:collapse !important;
+}
+/*table, th, td
+{
+    border: 1px solid black !important;
+}
+*/
+   /* table { page-break-inside:auto }
+    tr    { page-break-inside:avoid; page-break-after:auto }
+    thead { display:table-header-group }
+    tfoot { display:table-footer-group } */
+    
+    
+ .push{
+height:0px !important;
+ }  
+ 
+/*table tbody tr td p {
+margin-left:6px !important;
+}*/  
+    
+ @media print {
+
+  input.blue[type="button"]
+{
+display:none !important;
+}
+/* Added by madhuresh to hide report a problem button */
+ input.lightgreen[type="button"]
+{
+display:none !important;
+}
+  input.blue[type="submit"]
+{
+display:none !important;
+}
+ .widecoloumn
+{
+	width:85% !important;
+}
+.narrowcoloumn
+{
+	width:15% !important;
+} 
+.widecoloumn1
+{
+	width:70% !important;
+}
+.narrowcoloumn1
+{
+	width:30% !important;
+}
+.widecoloumn2
+{
+	width:60% !important;
+}
+.narrowcoloumn2
+{
+	width:40% !important;
+}
+p
+  { 
+   /*padding-left: 1.0em;
+        padding-right:-1.0em;
+        margin-right: 1.0em;
+        padding-top: 2.0em;*/
+        font-size: 1.21em;
+        text-align:justify;
+  }
+  td
+  {
+     font-size: 1.35em;
+  }
+ 
+  label,.footable
+  {
+  font-size: .9em !important;
+  }
+  .blue_heading
+  {
+  font-weight:bold;
+  color:black;
+  }
+
+/*html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, em, small, big, strong, b, u, i, blockquote, cite, pre, code, time, address, a, img, center, hr, form, fieldset, legend, label, input, textarea, button, table, caption, tbody, thead, tfoot, tr, th, td, iframe, object, canvas, audio, video {
+  line-height:1.2em !important;
+
+ }*/
+/*  .footable-row-detail-inner,.footable-cell-detail,.footable-last-column,.footable-first-column
+ {
+ display:block !important;
+ } */
+ 
+ .small_heading2
+ {
+  font-size: 1em !important;
+ }
+ legend.blue,legend.info
+ {
+ color:black;
+ }
+label.blue
+{
+	color:black;
+}
+.profilePhoto
+{
+	height:2.5cm !important;
+	width:2cm !important;
+}
+ a[href]:after {
+    content: none !important;
+  }
+  .fontSize1em
+{
+	font-size: 1.1em !important;
+	
+}
+
+@page 
+    {
+        size:A3;   
+        margin:0.8cm;
+        /*margin-bottom: 3cm;*/  /* this affects the margin in the printer settings */
+        /*margin-left: 1.5cm;
+        margin-top: 0.4cm;
+        padding-left: 2.0cm;
+        padding-right: 3.0cm;
+        padding-top: 0.4cm;*/
+ 
+    }
+  }
+    
+    
